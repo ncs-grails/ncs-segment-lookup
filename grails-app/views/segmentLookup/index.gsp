@@ -6,6 +6,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="layout" content="ncs" />
     	<title>Address Lookup ZP4 Test Page</title>
+		<link rel="stylesheet" type="text/css" href="${resource(dir:'css',file:'custom.css')}" />
+		<g:javascript library="jquery" plugin="jquery"/>
+		<g:javascript plugin="address-lookup-zpfour" src="address-lookup-zp4.js" />
     	<g:javascript src="address-lookup.js" />
     	<g:addressLookupOnChange />
   	</head>

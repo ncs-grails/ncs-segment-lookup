@@ -1,43 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
   <head>
-  
 	<title><g:layoutTitle default="Batch Tracking" /></title>
 	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',plugin:'ncs-web-template',file:'umn_reset.css')}" />
 	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',plugin:'ncs-web-template',file:'umn_text.css')}" />
 	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',plugin:'ncs-web-template',file:'umn_template.css')}" />
 	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',plugin:'ncs-web-template',file:'umn_optional.css')}" />
 	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',plugin:'ncs-web-template',file:'umn_grails.css')}" />
-	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',plugin:'ncs-web-template',file:'umn_template.gsp')}" />
+	<link rel="stylesheet" type="text/css" href="${createLink(controller:'css',action:'template')}" />
 	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',plugin:'ncs-web-template',file:'umn_print.css')}" media="print" />
-	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',plugin:'ncs-web-template',file:'umn_print.gsp')}" media="print" />
-	<link rel="stylesheet" type="text/css" href="${resource(dir:'css',file:'custom.css')}" />
+	<link rel="stylesheet" type="text/css" href="${createLink(controller:'css',action:'print')}" media="print" />
 	<link rel="shortcut icon" href="${resource(dir:'images',plugin:'ncs-web-template',file:'favicon.ico')}" type="image/x-icon" />
-
 	<g:javascript plugin="ncs-web-template" src="umn_searchfield.js" />
-	<g:javascript library="jquery" plugin="jquery"/>
-	<g:javascript plugin="address-lookup-zpfour" src="address-lookup-zp4.js" />
-	<style type="text/css">#main_wrapper{width:95%; max-width:1280px; min-width:720px}</style>
 
-	<!-- STYLE SHEETS TO FIX THE EVIL IE -->
-	<!--[if IE 6]>
-		<style type="text/css" media="screen">
-			@import url("${resource(dir:'css',plugin:'ncs-web-template',file:'umn_IE6.css')}");
-		</style>
+	<style type="text/css">
+	#main_wrapper{width:95%; max-width:1280px; min-width:720px}
+	</style>
+
+<!-- STYLE SHEETS TO FIX THE EVIL IE -->
+<!--[if IE 6]>
+<style type="text/css" media="screen">
+@import url("${resource(dir:'css',plugin:'ncs-web-template',file:'umn_IE6.css')}");
+	</style>
 	<![endif]-->
 	<!--[if IE 7]>
-		<style type="text/css" media="screen">
-			@import url("${resource(dir:'css',plugin:'ncs-web-template',file:'umn_IE7.css')}");
-		</style>
-	<![endif]-->
+	<style type="text/css" media="screen">
+	@import url("${resource(dir:'css',plugin:'ncs-web-template',file:'umn_IE7.css')}");
+	</style>
+	  <![endif]-->
 
-	<g:layoutHead />
-	<g:javascript library="application" />
-	  
+	  <g:layoutHead />
+	  <g:javascript library="application" />
   </head>
-
   <body class="center">
 
     <!-- * Skip Links * -->
@@ -85,8 +80,8 @@
 	  <!-- end "search" area -->
     </div>
     <!-- End search div -->
+
     <!--END UofM TEMPLATE HEADER-->
-    
 	<div id="spinner" class="spinner" style="display:none;">
 	  <img src="${resource(dir:'images',plugin:'ncs-web-template',file:'spinner.gif')}" alt="Spinner" />
 	</div>
@@ -104,10 +99,8 @@
     <!-- BEGIN OPTIONAL UNIT FOOTER -->
     <div class="grid_12" id="unit_footer2">
 	  <ul class="unit_footer_links">
-	  	<span class="fontSmaller">
 		<li>Address: 200 Oak <acronym class="acronym_border" title="Street Southeast">St SE</acronym>, Minneapolis, MN 55455-2008 Phone: 612-626-8160 Fax: 612-625-4363</li>
 		<li><a href="mailto:${'info@ncs.umn.edu'}">Contact Health Studies</a></li>
-	  	</span>
 	  </ul>
     </div>
     <!-- END OPTIONAL UNIT FOOTER -->

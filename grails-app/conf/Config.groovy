@@ -89,7 +89,3 @@ log4j = {
 //grails.plugins.addressLookupZpfour.server = 'http://zp4.intranet.example.com/'
 grails.plugins.addressLookupZpfour.server = 'http://zp4.cccs.umn.edu/'
 
-
-// Added by the Address Lookup ZP4 Plugin:
-//grails.plugins.addressLookupZpfour.server = 'http://zp4.intranet.example.com/'
-grails.plugins.addressLookupZpfour.server = 'http://localhost:80/'
