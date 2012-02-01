@@ -1,0 +1,26 @@
+Starting Process at Tue Jan 31 17:20:22 CST 2012
+Updating Config.groovy
+Moving DataSource.groovy to /home/AD/ajz/development/grails/ncs/config/development/ncs-segment-lookup-config.groovy
+Adding security plugin dependencies to grails-app/conf/BuildConfig.groovy
+Removing plugins.umn-acegi from application.properties
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	Annotation	grails.plugins.springsecurity.Secured
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	Definition	def springSecurityService
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	DefinitionuthenticateService.principal
+./grails-app/views/segmentLookup/index.gsp\tUpdating\tTags\tloggedInUserInfo
+./grails-app/views/segmentLookup/index.gsp\tUpdating\tTags\tusername
+Starting Process at Tue Jan 31 17:21:21 CST 2012
+Moving DataSource.groovy to /home/AD/ajz/development/grails/ncs/config/development/ncs-segment-lookup-config.groovy
+Starting Process at Tue Jan 31 17:22:22 CST 2012
+Moving DataSource.groovy to /home/AD/ajz/development/grails/ncs/config/development/ncs-segment-lookup-config.groovy
+Starting Process at Tue Jan 31 17:23:54 CST 2012
+Starting Process at Tue Jan 31 17:24:48 CST 2012
+Starting Process at Tue Jan 31 17:36:45 CST 2012
+Starting Process at Tue Jan 31 17:38:53 CST 2012
+Starting Process at Tue Jan 31 17:53:47 CST 2012
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	Annotation	grails.plugins.springsecurity.Secured
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	Definition	def springSecurityService
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	DefinitionuthenticateService.principal
+Starting Process at Tue Jan 31 17:54:55 CST 2012
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	Annotation	grails.plugins.springsecurity.Secured
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	Definition	def springSecurityService
+./grails-app/controllers/edu/umn/ncs/SegmentLookupController.groovy	Updating	DefinitionuthenticateService.principal

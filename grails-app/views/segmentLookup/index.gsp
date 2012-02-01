@@ -21,7 +21,7 @@
 				<span class="menuButton">
 					<a class="home" href="${createLink(uri: '/')}">Home</a> >
 					<g:link controller="logout" class="logout" >Logout</g:link>
-					<span class="fontSmaller">[Logged in as <strong><g:loggedInUserInfo field="username"/></strong>]</span>
+					<span class="fontSmaller">[Logged in as <strong><sec:username/></strong>]</span>
 				</span>
 			</div>
 		</g:form>

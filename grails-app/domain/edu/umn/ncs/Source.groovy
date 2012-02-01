@@ -15,7 +15,9 @@ class Source {
 		dateCreated()
 		userCreated()
 		lastUpdated(nullable:true)
-
 	}
 
+	static mapping = {
+		table 'segment_source'
+	}
 }

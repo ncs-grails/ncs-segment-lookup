@@ -1,12 +1,12 @@
 package edu.umn.ncs
 import com.semaphorecorp.zp4.StreetAddress
-import org.codehaus.groovy.grails.plugins.springsecurity.Secured
+import grails.plugins.springsecurity.Secured
 
 class SegmentLookupController {
 
 	// inject edu.umn.ncs.SegmentLookupService
 	def segmentLookupService
-	def authenticateService
+	def springSecurityService
 	
 	// INDEX
 	@Secured(['ROLE_NCS_SEGMENT_LOOKUP'])
@@ -19,7 +19,7 @@ class SegmentLookupController {
 	@Secured(['ROLE_NCS_SEGMENT_LOOKUP'])
 	def find = {
 	
-		def username = authenticateService.principal().username
+		def username = springSecurityService.principal.username
 
 		// println "${params}"
 		def saParams = [address:params.address, 
