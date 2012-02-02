@@ -35,5 +35,19 @@ grails.project.dependency.resolution = {
 		compile ":spring-security-ldap:1.0.5.1"
 		compile ":spring-security-shibboleth-native-sp:1.0.3"
 		provided ":spring-security-mock:1.0.1"
+		test ":code-coverage:1.2.5"
+		test ":codenarc:0.16.1"
 	}
 }
+
+codenarc.reports = {
+	JenkinsXmlReport('xml') {
+		outputFile = 'target/test-reports/CodeNarcReport.xml'
+		title = 'CodeNarc Report for NCS Segment Lookup'
+	}
+	JenkinsHtmlReport('html') {
+		outputFile = 'CodeNarcReport.html'
+		title = 'CodeNarc Report for NCS Segment Lookup'
+	}
+}
+codenarc.propertiesFile = 'grails-app/conf/codenarc.properties'
